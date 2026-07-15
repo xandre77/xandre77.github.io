@@ -1,110 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-<link rel="stylesheet" href="style.css" />
-<title>Portfolio Website</title>
-</head>
-<body>
-<header>
-<a href="#home" class="logo">Xandre V. Landas </a>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xandre V. Landas | Portfolio</title>
 
-<nav>
-<a href="#home" class="active">Home</a>
-<a href="#services">Services</a>
-<a href="#skills">Skills</a>
-<a href="#education">Education</a>
-<a href="#experience">Experience</a>
-<a href="#contact">Contact</a>
-</nav>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+    <a href="#" class="logo">Xandre V. Landas</a>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#coursework">Coursework</a>
+        <a href="#projects">Projects</a>
+        <a href="#seminars">Seminars</a>
+        <a href="#contact">Contact</a>
+    </nav>
 </header>
 
-<section class="home" id="home">
-    <div class="home-img">
-        <img src="FormalPic.jpg" alt="Profile" />
+<section class="hero">
+
+    <div class="hero-image">
+        <img src="FormalPic.jpg" alt="Xandre Landas">
     </div>
 
-    <div class="home-content">
-        <h1>Hi! , I'm <span>Xandre</span></h1>
-        <h3 class="typing-text">I'm a <span></span></h3>
+    <div class="hero-content">
+
+        <h1>Xandre V. Landas</h1>
+
+        <h2 class="typing-text">
+            <span></span>
+        </h2>
+
         <p>
-            Currently a Third Year College Student from Philippine Christian University. My attributes 
-            include cooperating when the situation deems it necessary. I focus on the matter at hand and will not
-            rest until the required goal has been fully achieved.
+            Incoming 4th Year Bachelor of Science in Information Technology
+            student seeking internship and OJT opportunities to apply technical
+            knowledge and gain industry experience in IT support, networking,
+            systems administration, and cybersecurity.
         </p>
 
-        <div class="social-icons">
-            <a href="https://www.linkedin.com/in/andre-landas-88555535a" target="_blank">
-                <i class="fa-brands fa-linkedin"></i>
+        <div class="buttons">
+            <a href="Xandre_Landas_CV.pdf" class="btn" target="_blank">
+                Download CV
             </a>
-        
-            <a href="https://github.com/xandre77" target="_blank">
-                <i class="fa-brands fa-github"></i>
-            </a>
-        
-            <a href="https://x.com/XandreLandas1" target="_blank">
-                <i class="fa-brands fa-x-twitter"></i>
-            </a>
-        
-            <a href="https://www.instagram.com/drelndas_23/" target="_blank">
-                <i class="fa-brands fa-instagram"></i>
+
+            <a href="#contact" class="btn secondary">
+                Contact Me
             </a>
         </div>
 
-        <a href="#contact" class="btn">Hire me</a>
+        <div class="social-icons">
+            <a href="https://github.com/xandre77" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/andre-landas-88555535a"
+            target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <a href="mailto:drelandas@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="about" class="card-section">
+    <h2>About Me</h2>
+
+    <div class="card">
+        <p>
+            I am an incoming 4th Year Information Technology student from
+            Philippine Christian University with interests in IT support,
+            networking, systems administration, and cybersecurity.
+
+            I enjoy learning new technologies and applying classroom knowledge
+            to practical projects and real-world scenarios.
+        </p>
     </div>
 </section>
 
-<section id="services" class="section-block">
-    <div class="content-box">
-        <h2>My Services Include</h2>
-        <h5>• IT Consultation</h5>
-        <h5>• MS Excel Encoding</h5>
-        <h5>• Power Point Creating</h5>
-        
+<section id="skills" class="card-section">
+    <h2>Technical Skills</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>Programming</h3>
+            <p>Java</p>
+            <p>Python</p>
+            <p>SQL</p>
+            <p>HTML</p>
+            <p>CSS</p>
+        </div>
+
+        <div class="card">
+            <h3>Tools</h3>
+            <p>GitHub</p>
+            <p>Visual Studio Code</p>
+            <p>Visual Studio</p>
+        </div>
+
+        <div class="card">
+            <h3>Professional Skills</h3>
+            <p>Problem Solving</p>
+            <p>Technical Troubleshooting</p>
+            <p>Communication</p>
+            <p>Team Collaboration</p>
+            <p>Adaptability</p>
+        </div>
+
     </div>
 </section>
 
-<section id="skills" class="section-block">
-    <div class="content-box">
-        <h2>My Skills </h2>
-        <h5>• Team Collaboration </h5>
-        <h5>• Proficiency With Digital Tools Using Microsoft</h5>
-        <h5>• Moderate Front-End Capabilities</h5>
-        <h5>• Cooking</h5>
+<section id="coursework" class="card-section">
+    <h2>Relevant Coursework</h2>
+
+    <div class="grid-small">
+        <div class="skill-box">Computer Networking</div>
+        <div class="skill-box">Cybersecurity Fundamentals</div>
+        <div class="skill-box">Information Assurance & Security</div>
+        <div class="skill-box">Systems Administration</div>
+        <div class="skill-box">Database Management Systems</div>
+        <div class="skill-box">Data Structures & Algorithms</div>
+        <div class="skill-box">Object-Oriented Programming</div>
+        <div class="skill-box">Web Development</div>
     </div>
 </section>
 
-<section id="education" class="section-block">
-    <div class="content-box">
-        <h2>My Education </h2>
-        <h5>• San Sebastian College Recolletos Manila: Elementary and Jr. High School </h5>
-        <h5>• Far Eastern University: Senior High School</h5>
-        <h5>• Philippine Christian University: College - Present</h5>
+<section id="projects" class="card-section">
+    <h2>Academic Projects</h2>
+
+    <div class="card">
+
+        <h3>Online Voting Election System</h3>
+
+        <p>
+            Co-developed a web-based voting system that allows users to
+            securely cast and manage votes electronically.
+        </p>
+
+        <p><strong>Technologies:</strong></p>
+
+        <div class="project-tech">
+            <span>SQL</span>
+            <span>C#</span>
+            <span>Windows Forms</span>
+            <span>Visual Studio</span>
+        </div>
 
     </div>
 </section>
 
-<section id="experience" class="section-block">
-    <div class="content-box">
-        <h2>My Experience </h2>
-        <h5>• Moderate Front-End Using Java </h5>
-        <h5>• Moderate Back-End Using Java</h5>
-        <h5>• Moderate HTML Experience</h5>
+<section id="seminars" class="card-section">
+
+    <h2>Seminars & Training</h2>
+
+    <div class="timeline">
+        <div class="timeline-item">2025 • Freelancing in Tech, DevOps and Web3 Technology Seminar</div>
+        <div class="timeline-item">2025 • Bitskwela Blockchain Summit</div>
+        <div class="timeline-item">2025 • Research Colloquium on Automation and Sustainability</div>
+        <div class="timeline-item">2024 • Virtual Research Colloquium</div>
     </div>
+
 </section>
 
-<section id="contact" class="section-block">
-    <div class="content-box">
-        <h1>Contact Me</h1>
-        <h5>• landasxandre@gmail.com </h5>
-        <h5>• 09150623296</h5>
-     
+<section class="card-section">
+
+    <h2>Honors & Awards</h2>
+
+    <div class="grid-small">
+        <div class="skill-box">Dean's Lister AY 2023-2024</div>
+        <div class="skill-box">Dean's Lister AY 2024-2025</div>
+        <div class="skill-box">Dean's Lister AY 2025-2026</div>
     </div>
+
+</section>
+
+<section id="contact" class="card-section">
+
+    <h2>Contact Information</h2>
+
+    <div class="card">
+        <p><strong>Email:</strong> drelandas@gmail.com</p>
+        <p><strong>Phone:</strong> 09150623286</p>
+        <p><strong>Location:</strong> Quiapo, Manila</p>
+    </div>
+
 </section>
 
 <script src="script.js"></script>
+
 </body>
 </html>
