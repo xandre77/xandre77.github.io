@@ -1,17 +1,24 @@
+const roles = [
+    "IT Support Enthusiast",
+    "Cybersecurity Learner",
+    "Networking Student",
+    "Systems Administration Student"
+];
 
-document.querySelectorAll('nav a').forEach(link => {
-    link.addEventListener('click', function(e) {
-        e.preventDefault();
+let roleIndex = 0;
 
-        document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
+const roleText = document.querySelector(".typing-text span");
 
-        this.classList.add('active');
+function changeRole() {
+    roleText.textContent = roles[roleIndex];
 
-        const sectionID = this.textContent.trim().toLowerCase();
+    roleIndex++;
 
-        const section = document.getElementById(sectionID);
-        if (section) {
-            section.scrollIntoView({ behavior: "smooth" });
-        }
-    });
-});
+    if(roleIndex >= roles.length) {
+        roleIndex = 0;
+    }
+}
+
+changeRole();
+
+setInterval(changeRole, 2500);
