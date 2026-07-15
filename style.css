@@ -1,165 +1,163 @@
-
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    border: none;
-    outline: none;
-    font-family: 'Poppins', sans-serif;
-}
-
-html{
-    font-size: 62.5%;
-    scroll-behavior: smooth;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Poppins,sans-serif;
 }
 
 body{
-    width: 100%;
-    background-color: black;
-    color: white;
-    overflow-x: hidden;
+    background:#0d1117;
+    color:#e6edf3;
 }
 
 header{
-    margin-top: 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 1rem 9%;
-    background-color: transparent;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
+    position:fixed;
+    top:0;
+    width:100%;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#161b22;
+    z-index:1000;
 }
 
 .logo{
-    font-size: 3rem;
-    color: #b74b4b;
-    font-weight: 800;
-    cursor: pointer;
+    font-size:28px;
+    color:#58a6ff;
+    font-weight:700;
+    text-decoration:none;
 }
 
 nav a{
-    font-size: 1.8rem;
-    color: white;
-    margin-left: 4rem;
-    font-weight: 500;
-    transition: 0.3s ease;
-    border-bottom: 3px solid transparent;
+    color:white;
+    text-decoration:none;
+    margin-left:30px;
+    font-size:18px;
 }
 
-nav a:hover,
-nav a.active{
-    color: #b74b4b;
-    border-bottom: 3px solid #b74b4b;
+nav a:hover{
+    color:#58a6ff;
 }
 
-section{
-    min-height: 100vh;
-    padding: 5rem 9% 5rem;
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:60px;
+    padding:120px 8%;
 }
 
-.section-block{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    font-size: 5rem;
-    font-weight: 700;
-    color: white;
+.hero-image img{
+    width:320px;
+    border-radius:50%;
+    border:5px solid #58a6ff;
 }
 
-.home{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8rem;
+.hero-content{
+    max-width:700px;
 }
 
-.home .home-content h1{
-    font-size: 6rem;
-    font-weight: 700;
+.hero-content h1{
+    font-size:56px;
 }
 
-span{
-    color: #b74b4b;
+.hero-content h2{
+    color:#58a6ff;
+    margin:15px 0;
 }
 
-.home-content h3{
-    font-size: 4rem;
-    margin-bottom: 1rem;
-    font-weight: 700;
+.hero-content p{
+    font-size:18px;
+    line-height:1.8;
 }
 
-.home-content p{
-    font-size: 1.6rem;
-}
-
-.home-img img{
-    width: 32vw;
-    border-radius: 50%;
-}
-
-.social-icons a{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 4rem;
-    height: 4rem;
-    background-color: transparent;
-    border: 0.2rem solid #b74b4b;
-    font-size: 2rem;
-    border-radius: 50%;
-    margin: 3rem 1.5rem 3rem 0;
-    transition: 0.3s ease;
-    color: #b74b4b;
-}
-
-.social-icons a:hover{
-    color: black;
-    transform: scale(1.3) translateY(-5px);
-    background-color: #b74b4b;
-    box-shadow: 0 0 25px #b74b4b;
+.buttons{
+    margin-top:30px;
 }
 
 .btn{
-    display: inline-block;
-    padding: 1rem 2.8rem;
-    background-color: black;
-    border-radius: 4rem;
-    font-size: 1.6rem;
-    color: #b74b4b;
-    letter-spacing: 0.3rem;
-    font-weight: 600;
-    border: 2px solid #b74b4b;
-    transition: 0.3s ease;
-    cursor: pointer;
+    padding:12px 24px;
+    background:#58a6ff;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    margin-right:15px;
 }
 
-.btn:hover{
-    background-color: #b74b4b;
-    color: black;
-    box-shadow: 0 0 25px #b74b4b;
+.secondary{
+    background:#21262d;
 }
 
-.typing-text{
-    font-size: 34px;
-    font-weight: 600;
+.social-icons{
+    margin-top:30px;
 }
 
-.typing-text span::before{
-    content: "Web Developer";
-    color: #b74b4b;
-    animation: words 20s infinite;
+.social-icons a{
+    font-size:28px;
+    margin-right:20px;
+    color:#58a6ff;
 }
 
-@keyframes words{
-    0%, 20% { content: "Web Developer"; }
-    21%, 40% { content: "Microsoft Specialist"; }
-    41%, 60% { content: "Gamer"; }
-    61%, 80% { content: "Home Cook"; }
-    81%, 100% { content: "IT Specialist"; }
+.card-section{
+    padding:80px 8%;
+}
+
+.card-section h2{
+    margin-bottom:40px;
+    color:#58a6ff;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.grid-small{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.card,.skill-box,.timeline-item{
+    background:#161b22;
+    padding:25px;
+    border-radius:12px;
+}
+
+.card p{
+    margin-top:10px;
+}
+
+.project-tech span{
+    display:inline-block;
+    background:#21262d;
+    padding:8px 15px;
+    border-radius:20px;
+    margin:10px 10px 0 0;
+}
+
+.timeline{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+@media(max-width:768px){
+
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    nav{
+        display:none;
+    }
+
+    .hero-content h1{
+        font-size:42px;
+    }
+
 }
